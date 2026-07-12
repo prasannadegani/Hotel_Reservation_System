@@ -1,0 +1,29 @@
+# Test Cases
+
+## Test Case 1
+Input:
+Valid customer details
+
+Expected Result:
+Booking should be added successfully.
+
+## Test Case 2
+Input:
+Empty customer name
+
+Expected Result:
+Display validation message.
+
+## Test Case 3
+Input:
+Check-out date before check-in date
+
+Expected Result:
+Display invalid date error.
+
+## Test Case 4
+Input:
+Invalid phone number
+
+Expected Result:
+Display phone number validation error.
