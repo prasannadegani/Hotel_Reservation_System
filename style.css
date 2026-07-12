@@ -1,0 +1,289 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#eef2f7;
+}
+
+header{
+    background:#1e3a5f;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.booking-form,
+.booking-list{
+    flex:1;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.booking-form h2,
+.booking-list h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#1e3a5f;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+input,
+select{
+    width:100%;
+    padding:12px;
+    margin-top:6px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    margin-top:20px;
+    border:none;
+    border-radius:8px;
+    background:#28a745;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#218838;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table th{
+    background:#1e3a5f;
+    color:white;
+    padding:12px;
+}
+
+table td{
+    padding:10px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background:#f5f5f5;
+}
+
+@media(max-width:900px){
+
+.container{
+    flex-direction:column;
+}
+
+header h1{
+    font-size:30px;
+}
+
+}
+.rooms{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+.rooms h2{
+    text-align:center;
+    color:#1e3a5f;
+    margin-bottom:25px;
+    font-size:32px;
+}
+
+.room-cards{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:320px;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    text-align:center;
+    margin:15px 0 10px;
+    color:#1e3a5f;
+}
+
+.card p{
+    text-align:center;
+    font-weight:bold;
+    color:#28a745;
+}
+
+.card ul{
+    list-style:none;
+    padding:15px;
+}
+
+.card ul li{
+    margin:8px 0;
+}
+/* Hero Section */
+
+.hero{
+    height:500px;
+    background:url("https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+}
+
+.hero-text{
+    position:relative;
+    text-align:center;
+    color:#fff;
+    z-index:1;
+}
+
+.hero-text h2{
+    font-size:52px;
+    margin-bottom:15px;
+}
+
+.hero-text p{
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.hero-text button{
+    padding:14px 35px;
+    background:#28a745;
+    color:#fff;
+    border:none;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.hero-text button:hover{
+    background:#1f8a38;
+}
+/* Contact */
+
+.contact{
+    background:#1f3b63;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+    margin-top:60px;
+}
+
+.contact h2{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.contact p{
+    font-size:18px;
+    margin:10px 0;
+}
+
+/* Footer */
+
+footer{
+    background:#102542;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:16px;
+}
+/* Booking Details */
+
+.booking-list{
+    flex:1;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.booking-list h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#1e3a5f;
+}
+
+.booking-list table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.booking-list th{
+    background:#1e3a5f;
+    color:white;
+    padding:12px;
+}
+
+.booking-list td{
+    padding:12px;
+    border:1px solid #ddd;
+    text-align:center;
+}
