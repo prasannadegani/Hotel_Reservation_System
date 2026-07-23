@@ -1,29 +1,61 @@
-# Test Cases
+# Hotel Reservation System - Test Cases
 
-## Test Case 1
+## Test Case 1: Successful Room Booking
 Input:
-Valid customer details
+Name: Prasanna
+Phone: 9876543210
+Room: Standard Room
+Check-In: 2026-07-25
+Check-Out: 2026-07-27
+Guests: 1
 
-Expected Result:
-Booking should be added successfully.
+Expected Output:
+Room booked successfully.
+Total Bill: ₹2000
 
-## Test Case 2
+---
+
+## Test Case 2: Empty Fields
 Input:
-Empty customer name
+Leave required fields empty.
 
-Expected Result:
-Display validation message.
+Expected Output:
+"Please fill all details."
 
-## Test Case 3
+---
+
+## Test Case 3: Invalid Phone Number
 Input:
-Check-out date before check-in date
+Phone: 98765
 
-Expected Result:
-Display invalid date error.
+Expected Output:
+"Please enter a valid 10-digit phone number."
 
-## Test Case 4
+---
+
+## Test Case 4: Invalid Dates
 Input:
-Invalid phone number
+Check-In: 2026-07-28
+Check-Out: 2026-07-25
 
-Expected Result:
-Display phone number validation error.
+Expected Output:
+"Check-Out date must be after Check-In date."
+
+---
+
+## Test Case 5: Duplicate Room Booking
+Input:
+Book Room 101 twice.
+
+Expected Output:
+"Room already booked! Please select another room."
+
+---
+
+## Test Case 6: Bill Calculation
+Input:
+Executive Room: ₹2500/night
+Stay: 4 days
+
+Expected Output:
+Total Bill: ₹10000
