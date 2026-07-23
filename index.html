@@ -2,22 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
     <title>Hotel Reservation System</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-    <div class="logo">🏨 Luxury Hotel</div>
-
+<nav class="navbar">
+    <div class="logo">
+        🏨 Luxury Hotel
+    </div>
     <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#rooms">Rooms</a></li>
-        <li><a href="#booking">Booking</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#rooms">Rooms</a>
+        </li>
+        <li>
+            <a href="#booking">Booking</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
     </ul>
 </nav>
-
 <header>
     <h1>🏨 Hotel Reservation System</h1>
     <p>Book Your Room Online</p>
@@ -25,20 +34,22 @@
 <section class="hero">
     <div class="hero-text">
         <h2>Luxury Stay Starts Here</h2>
-        <p>Book your dream room with comfort and luxury.</p>
-        <button onclick="document.querySelector('.booking-form').scrollIntoView({behavior:'smooth'})">
+        <p>
+            Book your dream room with comfort and luxury.
+        </p>
+        <button
+            onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})">
             Book Now
         </button>
     </div>
 </section>
-<section class="rooms" id="rooms"></section>
-
+<section class="rooms" id="rooms">
     <h2>Our Rooms</h2>
-
     <div class="room-cards">
-
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=600" alt="Standard Room">
+            <img
+                src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=600"
+                alt="Standard Room">
             <h3>Standard Room</h3>
             <p>₹1000 / Night</p>
             <ul>
@@ -47,9 +58,10 @@
                 <li>✔ TV</li>
             </ul>
         </div>
-
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600" alt="Deluxe Room">
+            <img
+                src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600"
+                alt="Deluxe Room">
             <h3>Deluxe Room</h3>
             <p>₹1500 / Night</p>
             <ul>
@@ -58,9 +70,10 @@
                 <li>✔ Queen Bed</li>
             </ul>
         </div>
-
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600" alt="Premium Room">
+            <img
+                src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600"
+                alt="Premium Room">
             <h3>Premium Room</h3>
             <p>₹2000 / Night</p>
             <ul>
@@ -69,85 +82,143 @@
                 <li>✔ Sea View</li>
             </ul>
         </div>
-
+        <div class="card">
+            <img
+                src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=600"
+                alt="Executive Room">
+            <h3>Executive Room</h3>
+            <p>₹2500 / Night</p>
+            <ul>
+                <li>✔ Free Wi-Fi</li>
+                <li>✔ King Size Bed</li>
+                <li>✔ Work Desk</li>
+            </ul>
+        </div>
+        <div class="card">
+            <img
+                src="https://images.unsplash.com/photo-1591088398332-8a7791972843?w=600"
+                alt="Family Suite">
+            <h3>Family Suite</h3>
+            <p>₹3000 / Night</p>
+            <ul>
+                <li>✔ 2 Large Beds</li>
+                <li>✔ Free Breakfast</li>
+                <li>✔ Family Lounge</li>
+            </ul>
+        </div>
+        <div class="card">
+            <img
+                src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600"
+                alt="Luxury Suite">
+            <h3>Luxury Suite</h3>
+            <p>₹4000 / Night</p>
+            <ul>
+                <li>✔ Luxury King Bed</li>
+                <li>✔ Private Balcony</li>
+                <li>✔ Premium Services</li>
+            </ul>
+        </div>
     </div>
-
 </section>
-
-<div class="container">
-
+<div class="container" id="booking">
+    <!-- BOOKING FORM -->
     <div class="booking-form">
-
         <h2>Book Your Room</h2>
-
+        <!-- Customer Name -->
         <label>Customer Name</label>
-        <input type="text" id="name" placeholder="Enter your name">
-
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter your name">
+        <!-- Phone Number -->
         <label>Phone Number</label>
-        <input type="tel" id="phone" placeholder="Enter phone number">
-
+        <input
+            type="tel"
+            id="phone"
+            placeholder="Enter 10-digit phone number">
+        <!-- Select Room -->
         <label>Select Room</label>
-
         <select id="room">
-            <option value="">Select Room</option>
-            <option value="101">Room 101 - Standard (₹1000)</option>
-            <option value="102">Room 102 - Deluxe (₹1500)</option>
-            <option value="103">Room 103 - Premium (₹2000)</option>
+            <option value="">
+                Select Room
+            </option>
+            <option value="101">
+                Room 101 - Standard (₹1000)
+            </option>
+            <option value="102">
+                Room 102 - Deluxe (₹1500)
+            </option>
+            <option value="103">
+                Room 103 - Premium (₹2000)
+            </option>
+            <option value="104">
+                Room 104 - Executive (₹2500)
+            </option>
+            <option value="105">
+                Room 105 - Family Suite (₹3000)
+            </option>
+            <option value="106">
+                Room 106 - Luxury Suite (₹4000)
+            </option>
         </select>
-
+        <!-- Check-In -->
         <label>Check-In Date</label>
-        <input type="date" id="checkin">
-
+        <input
+            type="date"
+            id="checkin">
+        <!-- Check-Out -->
         <label>Check-Out Date</label>
-        <input type="date" id="checkout">
-
+        <input
+            type="date"
+            id="checkout">
+        <!-- Guests -->
         <label>Number of Guests</label>
-        <input type="number" id="guests" value="1" min="1">
-
-        <button onclick="bookRoom()">Book Room</button>
-
+        <input
+            type="number"
+            id="guests"
+            value="1"
+            min="1">
+        <!-- Book Button -->
+        <button onclick="bookRoom()">
+            Book Room
+        </button>
     </div>
-
-   <div class="booking-list">
-
-    <h2>Booking Details</h2>
-
-    <table id="bookingTableContainer">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Phone</th>
-                <th>Room</th>
-                <th>Guests</th>
-                <th>Days</th>
-                <th>Total Bill</th>
-            </tr>
-        </thead>
-
-        <tbody id="bookingTable">
-
-        </tbody>
-    </table>
-
-</div>
-
-</div>
+    <div class="booking-list">
+        <h2>Booking Details</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Room</th>
+                    <th>Guests</th>
+                    <th>Days</th>
+                    <th>Total Bill</th>
+                </tr>
+            </thead>
+            <tbody id="bookingTable">
+            </tbody>
+        </table>
+    </div>
 </div>
 <section class="contact" id="contact">
     <h2>Contact Us</h2>
-    <p>📍 Hyderabad, India</p>
-    <p>📞 +91 9876543210</p>
-    <p>📧 luxuryhotel@gmail.com</p>
+    <p>
+        📍 Hyderabad, India
+    </p>
+    <p>
+        📞 +91 9876543210
+    </p>
+    <p>
+        📧 luxuryhotel@gmail.com
+    </p>
 </section>
 <footer>
-    <p>© 2026 Luxury Hotel Reservation System | All Rights Reserved</p>
+    <p>
+        © 2026 Luxury Hotel Reservation System |
+        All Rights Reserved
+    </p>
 </footer>
-
-<footer>
-    <p>© 2026 Luxury Hotel Reservation System | All Rights Reserved</p>
-</footer>
-
 <script src="script.js"></script>
-
 </body>
 </html>
